@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- STRINGS FOR ENGLISH -->
+  <string name="app_name">Binzel Prototipo2</string> 
+  
+  <string name="login_text">Name</string>
+  <string name="pwd_text">Password</string>
+  <string name="btn_login_ok">Log In</string>
+
+  <string name="menuProd_titulo">Production Menu</string>
+  <string name="menuProd_selecione">Choose one option</string>
+  <string name="menuProd_tituloListaOPs">Production Orders</string>
+
+  <string name="menuGer_titulo">Management Menu</string>
+  <string name="menuGer_msgAbrirOP">OPEN PROD.ORDER DETAILS?</string>
+
+  <!--<string name="producaoOP_titulo">Production Order</string>-->
+
+  <string name="detailsOP_titulo">Prod.Order Details</string>
+  <string name="detailsOP_MsgOPVazio">No OP details to be shown.</string>
+    
+  <string name="btn_ops">Production Orders</string>
+  <string name="btn_eventos">Events</string>
+  <string name="btn_ok">Ok</string>
+  <string name="btn_cancel">Cancel</string>
+  <string name="btn_OpDt_iniciar">Point</string>
+  <string name="btn_OpDt_adicionar">Add Empl.</string>
+  <string name="btn_OpDt_desenho">Draw</string>
+
+  <string name="btn_rel_ops">Production Order Sheet</string>
+  <string name="btn_rel_func">Employee Performance</string>
+  <string name="btn_reports">Reports</string>
+
+  <string name="lbl_Op_list">Prod.Order</string>
+  <string name="lbl_Client_list">Customer/Product</string>
+  <string name="lbl_Ini_list">Start</string>
+  <string name="lbl_Fim_list">End</string>
+  <string name="lbl_ApontCod">Notat.</string>
+  <string name="lbl_Descr">Description</string>
+  <string name="lbl_QtdProd">Qty Produced</string>
+
+  <string name="action_exit">Exit</string>
+  
+  <string name="warning">WARNING</string>
+  <string name="exit_message">Do want you to close the application</string>
+  <string name="close_app_message">Closing App</string>
+
+  
+</resources>

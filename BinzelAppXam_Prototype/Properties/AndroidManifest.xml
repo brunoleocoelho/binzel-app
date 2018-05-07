@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+          android:versionCode="1" 
+          android:versionName="1.0" 
+          package="BinzelApp_Prototype.BinzelAppXam_Prototype" 
+          android:installLocation="auto">
+	<application 
+    allowBackup="true" 
+    android:label="@string/app_name" 
+    android:theme="@style/Binzel" 
+    android:icon="@drawable/binzel_app_icon_light"
+    android:windowActionBar="false">    
+  </application>
+	<uses-sdk android:minSdkVersion="21" />
+</manifest>

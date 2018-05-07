@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:theme="@style/Binzel">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--USUARIO-->
+        <TextView
+            android:id="@+id/menuProd_User"
+            android:text="José Silva, Gerência"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_dark"
+            android:padding="5dp"
+            android:gravity="right"
+            android:layout_alignParentTop="true" />
+    <!--STATUS IMG-->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EM PRODUCAO"
+            android:background="@color/sky_blue"
+            android:padding="15dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    <!--NUM OP-->
+        <TextView
+            android:id="@+id/numOP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="79059600000"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtStatus"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    <!--CLIENTE/PROJETO-->
+        <TextView
+            android:id="@+id/txtCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Cliente A"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/numOP" />
+        <TextView
+            android:id="@+id/txtProjDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Fabricação Equipamento Tubulação 001"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/txtCliente" />
+        <LinearLayout
+            android:layout_below="@+id/txtProjDesc"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLay_lbl1"
+            android:weightSum="100"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Inicio"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/textView1"
+                android:text="Fim"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linLay_dataHora"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cel_Fim"
+            android:minWidth="100dp"
+            android:weightSum="100"
+            android:layout_below="@+id/linLay_lbl1">
+        <!--INICIAL-->
+            <TextView
+                android:id="@+id/dtInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11-ABR-2018"
+                android:layout_weight="25"
+                android:gravity="right"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/hrInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="08:20"
+                android:layout_weight="25"
+                android:gravity="left"
+                android:padding="5dp" />
+        <!--FINAL-->
+            <TextView
+                android:id="@+id/dtFim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16-ABR-2018"
+                android:layout_weight="25"
+                android:gravity="right"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/hrFim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14:35"
+                android:layout_weight="25"
+                android:gravity="left"
+                android:padding="5dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLay_Btns"
+            android:gravity="center"
+            android:padding="28dp"
+            android:layout_below="@+id/linLay_dataHora">
+            <Button
+                android:id="@+id/btn_Parada"
+                android:text="Parada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/yellow"
+                android:layout_marginBottom="10dp"
+                android:minWidth="150dp"
+                android:layout_margin="5dp" />
+            <Button
+                android:id="@+id/btn_Finalizar"
+                android:text="Finalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/red"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/btn_Parada"
+                android:minWidth="150dp"
+                android:layout_margin="5dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

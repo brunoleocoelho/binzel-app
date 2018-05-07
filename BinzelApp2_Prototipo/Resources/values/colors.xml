@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Este arquivo define cores customizadas -->
+    <!-- padronização literal de algumas cores -->
+    <color name="sky_blue">#FF3498DB</color>
+    <color name="leaf_green">#FF77D065</color>
+    <color name="yellow">#FFF4F459</color>
+    <color name="red">#FFFF3B43</color>
+    <color name="gray">#FFD0D5D5</color>
+    <color name="gray_dark">#FF4C5656</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>    
+    <!-- Lilás da AppBar -->
+  <!--<color name="app_Lilac">#FFFF0088</color>-->
+  <color name="app_Lilac">#FFEC008C</color>
+    <!-- Cores de Fundo-->
+    <color name="light_Lilac">#FFF28DC3</color>
+    <color name="dark_Lilac">#FFAA005A</color>
+    <color name="back_White">#FFFAFAFA</color> 
+</resources>

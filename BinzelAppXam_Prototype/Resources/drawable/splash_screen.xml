@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <!-- item referente a cor BRANCA de fundo -->
+  <item>
+    <color android:color="@color/white"/>
+  </item>
+  
+  <!-- item referente ao LOGO de fundo-->
+  <item>
+    <bitmap android:src="@drawable/binzel_icon"
+            android:tileMode="disabled"
+            android:gravity="center"/>
+  </item>  
+
+</layer-list>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp">
+<!--STATUS IMG-->
+    <LinearLayout
+        android:id="@+id/cel_Sts"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_alignParentLeft="true">
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="2dp"
+            android:src="@drawable/sign_blue_in_process" />
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="producao"
+            android:textSize="12dp" />
+    </LinearLayout>
+<!--NUM OP-->
+    <LinearLayout
+        android:id="@+id/cel_OP"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/cel_Sts">
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_Op_list" />
+        <TextView
+            android:id="@+id/numOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="790596000000000"
+            android:maxWidth="100dp" />
+    </LinearLayout>
+<!--CLIENTE/PROJETO-->
+    <LinearLayout
+        android:id="@+id/cel_Cliente"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/cel_OP"
+        android:requiresFadingEdge="horizontal"
+        android:fadingEdge="horizontal"
+        android:layout_toStartOf="@+id/cel_Inicio">
+        <TextView
+            android:id="@+id/Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_Client_list"
+            android:maxLines="1" />
+        <TextView
+            android:id="@+id/txtCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Cliente A"
+            android:maxEms="10" />
+        <TextView
+            android:id="@+id/txtProjDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Fabricação Equipamento Tubulação 001" />
+    </LinearLayout>
+<!--INICIAL-->
+    <LinearLayout
+        android:id="@+id/cel_Inicio"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toLeftOf="@+id/cel_Fim"
+        android:minWidth="100dp">
+        <TextView
+            android:id="@+id/lblInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_Ini_list" />
+        <TextView
+            android:id="@+id/dtInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11-ABR-2018" />
+        <TextView
+            android:id="@+id/hrInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08:20" />
+    </LinearLayout>
+<!--FINAL-->
+    <LinearLayout
+        android:id="@+id/cel_Fim"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:minWidth="100dp">
+        <TextView
+            android:id="@+id/lblFim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_Fim_list" />
+        <TextView
+            android:id="@+id/dtFim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16-ABR-2018" />
+        <TextView
+            android:id="@+id/hrFim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14:35" />
+    </LinearLayout>
+</RelativeLayout>

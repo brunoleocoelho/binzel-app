@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:theme="@style/Binzel">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <TextView
+        android:text="José Silva, Gerência"
+        android:id="@+id/menuProd_User"
+        android:padding="5dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_dark"
+        android:textColor="@color/white" />
+    <RelativeLayout
+        android:id="@+id/DtOpRelLay_Header"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_dark"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+    <!--NUM OP-->
+        <LinearLayout
+            android:id="@+id/DtOpLinLay_Op"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/DtOpLbl_Op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:text="@string/lbl_Op_list" />
+            <TextView
+                android:id="@+id/DtOpTxt_num"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7894560000000000"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    <!--CLIENTE PROJETO-->
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_below="@+id/DtOpLinLay_Op"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/DtOpLbl_Cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:text="@string/lbl_Client_list" />
+            <TextView
+                android:id="@+id/DtOpTxt_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente A"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/DtOpTxt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fabricação Equipamento 001"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layoutDirection="rtl"
+            android:layout_centerVertical="true"
+            android:padding="5dp">
+        <!--STATUS TXT E IMG-->
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+                <TextView
+                    android:id="@+id/DtOpTxt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="producao"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/DtOpImg_status"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/sign_blue_in_process"
+                    android:layout_weight="25" />
+            </LinearLayout>
+        <!--INICIO LBL E TXT-->
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/DtOpLbl_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_Ini_list"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:padding="5dp" />
+                <TextView
+                    android:id="@+id/DtOpTxt_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"
+                    android:layout_weight="25"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        <!--FIM LBL E TXT-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:id="@+id/linearLayout5">
+                <TextView
+                    android:id="@+id/DtOpLbl_fim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_Fim_list"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:padding="5dp" />
+                <TextView
+                    android:id="@+id/DtOpTxt_fim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/DtOpListView" />
+</LinearLayout>

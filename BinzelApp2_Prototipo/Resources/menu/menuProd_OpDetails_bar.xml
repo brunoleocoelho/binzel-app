@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Menu que será exibido na ActionBar da MainActivity -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <!--xmlns:tools="http://schemas.android.com/tools"-->
+      <!--tools:context=".Menu1"-->
+
+  <!-- Trabalhar Item -->
+  <item android:id="@+id/menuProd_Op_iniciar"
+        android:icon="@mipmap/ic_build_white_48dp"
+        android:title="@string/btn_OpDt_iniciar"        
+        android:showAsAction="ifRoom|withText" />
+  <!-- Adicionar Colaborador -->
+  <item android:id="@+id/menuProd_Op_AddColab"
+        android:icon="@mipmap/ic_person_add_white_48dp"
+        android:title="@string/btn_OpDt_adicionar"
+        android:showAsAction="ifRoom|withText" />  
+  <!-- Ver Desenho OP -->
+  <item android:id="@+id/menuProd_Op_desenho"
+        android:icon="@mipmap/ic_camera_alt_white_48dp"
+        android:title="@string/btn_OpDt_desenho"
+        android:showAsAction="ifRoom|withText" />  
+  <!-- Log Out -->
+  <!--<item android:id="@+id/menuOptExit"
+        android:icon="@mipmap/ic_close_white_24dp"
+        android:title="@string/action_exit"
+        android:showAsAction="always|withText" />-->
+  
+</menu>
+
+<!-- Code to implement into Activity:
+
+Android.Widget.SearchView searchView;
+public override bool OnCreateOptionsMenu(IMenu menu)
+{
+  this.MenuInflater.Inflate(Resource.Menu.menu_bar, menu);
+
+  var searchItem = menu.FindItem(Resource.Id.action_search);
+
+  searchView = searchItem.ActionProvider.JavaCast<Android.Widget.SearchView>();
+
+  searchView.QueryTextSubmit += (sender, args) =>
+  {
+    Toast.MakeText(this, "You searched: " + args.Query, ToastLength.Short).Show();
+
+  };
+
+  return base.OnCreateOptionsMenu(menu);
+}
+
+-->

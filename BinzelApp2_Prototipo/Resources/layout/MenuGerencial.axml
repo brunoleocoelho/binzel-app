@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Binzel">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:id="@+id/lblMenu1Titulo"
+            android:text="@string/menuProd_selecione"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/btnRelOPs"
+            android:text="@string/btn_rel_ops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="16dp"
+            android:layout_below="@id/lblMenu1Titulo"
+            android:layout_marginBottom="5dp"
+            android:minWidth="350dp"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="350dp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnRelFunc"
+            android:text="@string/btn_rel_func"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="16dp"
+            android:layout_below="@id/btnRelOPs"
+            android:layout_marginBottom="5dp"
+            android:minWidth="350dp"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="350dp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnReports"
+            android:text="@string/btn_reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="16dp"
+            android:layout_below="@id/btnRelFunc"
+            android:layout_marginBottom="5dp"
+            android:minWidth="350dp"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="350dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <TextView
+        android:text="José Silva, Gerência"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuProd_User"
+        android:layout_below="@id/toolbar"
+        android:padding="5dp"
+        android:textColor="@color/gray_dark"
+        android:gravity="right" />
+</RelativeLayout>

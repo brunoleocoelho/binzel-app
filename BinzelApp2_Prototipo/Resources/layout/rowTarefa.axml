@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="2dp">
+<!--NUM DA TAREFA-->
+    <LinearLayout
+        android:id="@+id/apCel_codigo"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/tarefaLbl_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_ApontCod" />
+        <TextView
+            android:id="@+id/apTxt_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="29"
+            android:maxWidth="100dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+<!--DESCRICAO DA TAREFA-->
+    <LinearLayout
+        android:id="@+id/apCel_descricao"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:requiresFadingEdge="horizontal"
+        android:fadingEdge="horizontal"
+        android:layout_toRightOf="@+id/apCel_codigo"
+        android:layout_toStartOf="@+id/apCel_inicio">
+        <TextView
+            android:id="@+id/apLbl_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_Descr"
+            android:maxLines="20" />
+        <TextView
+            android:id="@+id/apTxt_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpeza / Organização - Setor ou Predial"
+            android:textStyle="italic" />
+    </LinearLayout>
+<!--INICIAL-->
+    <LinearLayout
+        android:id="@+id/apCel_inicio"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toLeftOf="@+id/apCel_fim"
+        android:minWidth="100dp">
+        <TextView
+            android:id="@+id/apLbl_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_Ini_list" />
+        <TextView
+            android:id="@+id/apTxt_dtInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00/000/0000"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/apTxt_hrInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08:20"
+            android:textStyle="italic" />
+    </LinearLayout>
+<!--FINAL-->
+    <LinearLayout
+        android:id="@+id/apCel_fim"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toLeftOf="@+id/apCel_status"
+        android:minWidth="100dp">
+        <TextView
+            android:id="@+id/apLbl_fim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:textColor="@color/app_Lilac"
+            android:text="@string/lbl_Fim_list" />
+        <TextView
+            android:id="@+id/apTxt_dtFim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00/000/0000"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/apTxt_hrFim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14:35"
+            android:textStyle="italic" />
+    </LinearLayout>
+<!--STATUS IMG-->
+    <LinearLayout
+        android:id="@+id/apCel_status"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/apImg_Status"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="2dp"
+            android:src="@drawable/sign_blue_in_process" />
+    </LinearLayout>
+</RelativeLayout>

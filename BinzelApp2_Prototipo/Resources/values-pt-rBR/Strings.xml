@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- STRINGS PARA PORTUGUES BRASIL-->
+  <string name="app_name">Binzel Prototipo2</string> 
+  
+  <string name="login_text">Nome</string>
+  <string name="pwd_text">Senha</string>
+  <string name="btn_login_ok">Entrar</string>
+  
+  <string name="menuProd_titulo">Menu de Produção</string>
+  <string name="menuProd_selecione">Selecione uma opção</string>
+  <string name="menuProd_tituloListaOPs">Ordens de Produção</string>
+
+  <string name="menuGer_titulo">Menu de Gerenciamento</string>
+  <string name="menuGer_msgAbrirOP">ABRIR DETALHES DA OP?</string>
+
+  <!--<string name="producaoOP_titulo">Ordem de Produção</string>-->
+
+  <string name="detailsOP_titulo">Detalhes de OP</string>
+  <string name="detailsOP_MsgOPVazio">Não existem detalhes da OPs para exibição.</string>
+
+  <string name="btn_ops">Ordens de Produção</string>
+  <string name="btn_eventos">Eventos</string>
+  <string name="btn_ok">Ok</string>
+  <string name="btn_cancel">Cancelar</string>
+  <string name="btn_OpDt_iniciar">Apontar</string>
+  <string name="btn_OpDt_adicionar">Ad.Colab.</string>
+  <string name="btn_OpDt_desenho">Desenho</string>
+  
+  <string name="btn_rel_ops">Relação de Ordens de Produção</string>
+  <string name="btn_rel_func">Relação de Funcionários</string>
+  <string name="btn_reports">Relatórios</string>
+
+  <string name="lbl_Op_list">Ordem Prod.</string>
+  <string name="lbl_Client_list">Cliente/Produto</string>
+  <string name="lbl_Ini_list">Início</string>
+  <string name="lbl_Fim_list">Fim</string>
+  <string name="lbl_ApontCod">Apont.</string>
+  <string name="lbl_Descr">Descrição</string>
+  <string name="lbl_QtdProd">Quant.Produzida</string>
+  
+  <string name="action_exit">Sair</string>
+  
+  <string name="warning">AVISO</string>
+  <string name="exit_message">Deseja fechar a aplicação</string>
+  <string name="close_app_message">Encerrando App</string>
+
+
+
+</resources>

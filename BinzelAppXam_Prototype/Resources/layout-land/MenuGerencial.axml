@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Binzel">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/lblMenu1Titulo"
+            android:text="@string/menuProd_selecione"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:id="@+id/btnRelOPs"
+            android:text="@string/btn_rel_ops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/lblMenu1Titulo"
+            android:minWidth="300dp"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnRelFunc"
+            android:text="@string/btn_rel_func"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/btnRelOPs"
+            android:minWidth="300dp"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnReports"
+            android:text="@string/btn_reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/btnRelFunc"
+            android:layout_centerHorizontal="true"
+            android:minWidth="300dp"
+            android:padding="15dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <TextView
+        android:text="José Silva, Gerência"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuProd_User"
+        android:layout_below="@id/toolbar"
+        android:padding="5dp"
+        android:textColor="@color/gray_dark"
+        android:gravity="right" />
+</RelativeLayout>
