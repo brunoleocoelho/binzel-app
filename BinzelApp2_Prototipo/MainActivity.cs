@@ -49,14 +49,14 @@ namespace BinzelApp2_Prototipo
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Main);
 
-            ////Variavel criada recebe a toolbar criada, e é setada pelo SetActionBar
-            ////após isso, pode ser referenciada chamando "ActionBar"
+            //Variavel criada recebe a toolbar criada, e é setada pelo SetActionBar
+            //após isso, pode ser referenciada chamando "ActionBar"
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetActionBar(toolbar);
             ActionBar.Title = Resources.GetString(Resource.String.app_name); //"Binzel App (Prototype)"
             //ActionBar.SetLogo(Resource.Drawable.binzel_app_icon_light);
 
-            ////instanciando objetos da tela
+            //instanciando objetos da tela
             nameLogin = FindViewById<EditText>(Resource.Id.txtName);
             password = FindViewById<EditText>(Resource.Id.txtPwd);
             btnLoginOk = FindViewById<Button>(Resource.Id.btnLoginOk);
@@ -64,11 +64,11 @@ namespace BinzelApp2_Prototipo
 
         }
 
-        ///// <summary>
-        ///// Faz a verificação de login e senha de usuário e encaminha para menu inicial
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
+        /// <summary>
+        /// Faz a verificação de login e senha de usuário e encaminha para menu inicial
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LoginSystem(object sender, System.EventArgs e)
         {
             Toast mensagem;
