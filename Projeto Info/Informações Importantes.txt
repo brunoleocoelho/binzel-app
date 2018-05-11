@@ -1,0 +1,16 @@
+INFORMAÇÕES IMPORTANTES P/ IMPLEMENTAÇÃO
+
+Planejamento e Controle da Produção - Documento de Referência
+http://tdn.totvs.com/pages/releaseview.action?pageId=286008557
+
+Consultas Rápidas - Ordem de Produção (Protheus)
+http://tdn.totvs.com/pages/releaseview.action?pageId=189313351
+
+Ordens de Produção (OPs) - MATA650
+http://tdn.totvs.com/pages/releaseview.action?pageId=341230021
+
+Produção - MATA250
+http://tdn.totvs.com/pages/releaseview.action?pageId=286729685
+
+Apontamento de Produção
+http://tdn.totvs.com/pages/releaseview.action?pageId=286729861
