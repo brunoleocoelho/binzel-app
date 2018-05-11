@@ -1,0 +1,59 @@
+
+Ferramentas
+	Overall Equipment Effectiveness (OEE): p/ análise do tempo gasto na produção
+
+
+Cenário Atual: 
+	1.Existem OPs (Ordens de Produção) que têm tarefas a concluir
+	2.Utilizadas fichas manuais de produção (Fichas de Apontamento "FA"), por colaborar e equipamento, p/ registrar informações de duração das tarefas executadas por um colaborador em uma OP (Ordem de Produção) ou Eventos ocorridos num período de trabalho.
+	3.Cada tarefa tem um códgio (Tabela de Códigos de Apontamento "CA")
+	4.São preenchidos nas fichas:
+		>Data
+		>Codigo Apontamento
+		>Numero da OP
+		>Codigo Produto
+		>Horário Inicio
+		>Horario Final
+	5.Fichas recolhidas no final do dia p/ PCP (Planejamento e Controle de Produção)
+	6.São lançadas em um "banco de dados" Excel
+	7.Dados resultantes são compilados em gráficos e tabelas, com agrupamentos:
+		7.1 Tempo total mensal de cada CA por operador
+		7.2 Tempo total geral de cada CA por operador
+		7.3 Tempo Total Geral de cada CA
+		7.4 Tempo Total Acumulado
+		7.5 Tempo utilizado em um Evento por colaborador
+		7.6 Tabela de horas não-produtivas, não trabalhadas, downtime e horas produtivas
+		7.7 Grafico OEE (Overall Equipment Effectiveness)
+	8. Indicadores de produção OEE divididos em 3 índices p/ máquinas:
+		8.1 Disponibilidade: funcionando / parada
+		8.2 Performance: nível de rendimento (se operando em capacidade máxima)
+		8.3 Qualidade: se especificações estão corretas
+
+Objetivos:
+	>Criar um software que será usado pelos colaboradores para inserir informações de eventos da produção, e para acesso a essas informações pela gerência
+	>Uso de Tablet GALAXY TAB A no apoio a coleta de dados (Android 5.1 API22)
+	>Tornar a coleta dos dados do setor de montagem eficiente, confiável e rápida
+	>Definir ferramentas adequadas de análise das informações
+	>Fluxo de USO:
+		1. Tela de Login de usuário, direcionando conforme dois tipos:
+			A-Produção
+			B-Gerencial/Engenharia
+		
+		//LOGIN PRODUÇÃO
+		2. Tela exibe:
+			-Nome do colaborador (no "Header")
+			-Tempo começa a contar (na Header/direita)
+			-Duas opções p/ tocar (no Centro):
+				>Indicar Evento
+				>Iniciar Produção
+			-TextBox para inserir código de atividade (***VERIFICAR O QUE É***)
+		
+		3. Escolhendo PRODUÇÂO será exibida a tela de OPs, para que selecione qual trabalhar
+		4. Após selecionar OP, operador poderá visulizar ou inicar produção 
+		5. Ao inciar abre tela EM PRODUÇÃO c/ opções:
+			>Finalizar OP
+			>Parada necessária
+			>Visualizar imagens
+		
+
+	
