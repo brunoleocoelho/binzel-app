@@ -1,0 +1,81 @@
+IMPLEMENTAÇÃO DO APP CONTROLE DE PRODUÇÃO BINZEL
+
+http://tdn.totvs.com/pages/releaseview.action?pageId=286729861
+http://tdn.totvs.com/display/public/PROT/Fluxo+Operacional+-+SIGAPCP
+
+Tabelas utilizadas
+http://tdn.totvs.com/pages/releaseview.action?pageId=342295587
+Planejamento e Controle de Produção-PCP -  responsável por cadastros básicos do sistema de manufatura, tais como: produtos, estruturas, operações e outros, replicando todos os dados para o módulo Chão de Fábrica - SFC, sempre que houver eventos cadastrados.
+	SB1 – Produtos
+	SG1 – Estruturas
+	SD3 – Movimentações Internas
+	SD4 – Empenhos
+	SH1 – Recursos
+	SH4 – Ferramentas
+	SG2 – Operações
+	SH9 – Exceções Calendário
+	SC2 – Ordens de Produção
+	SH6 – Movimentações da Produção
+	SHB – Centros de Trabalho
+	SH7 – Calendários
+
+Chão de Fábrica-SFC - O módulo Chão de Fábrica é utilizado para captar os dados referentes à produção (apontamentos, paradas, perdas, consumos etc) e gerar consultas que resultam no objetivo de otimizar e aumentar a produtividade da empresa.
+	CZ3 – Itens
+	CYV – Apontamento de Produção
+	CY0 – Apontamento de Refugo
+	CYW – Apontamento de MOD
+	CZ0 – Apontamento de Ferramenta
+	CZW – Apontamento de GGF
+	CYP – Componentes da Ordem
+	CYB – Máquinas
+	CYH – Recursos
+	CY9 – Operações da Ordem
+	CYD – Pert de Operações
+	CYG – Calendário Genérico
+	CYZ – Calendário
+	CYQ – Ordens de Produção
+	CZP – Reservas Usadas
+	CYX – Apontamento de Parada
+	CZ6 – Apontamento de Parada MOD
+	CYI – Centro de Trabalho
+	CYM – Turnos
+	CYF – Turnos X Semana
+	CYR – Turnos X Dia
+
+
+O PCP, no planejamento, deve obedecer a uma seqüência:
+http://tdn.totvs.com/pages/releaseview.action?pageId=286008557
+	1-Receber previsão de vendas da área comercial, expressando intervenção de vendas por produto em um determinado período (consumo).
+	2-Verificar nível de estoque atual (estoque inicial).
+	3-Quantificar nível desejável de estoque futuro, definindo a quantidade que ficará estocada após cumprir demanda prevista (estoque final).
+	4-Quantificar a produção a ser cumprida, que então passa a se constituir na meta de produção do período.
+	5-Verificar o estoque de matéria-prima e os insumos diversos, determinando itens que serão adquiridos pelo setor de suprimentos, necessários a obtenção da meta de produção estabelecida.
+	6-Calcular, em função do nível de produção e das horas previstas de trabalho, a necessidade de equipamento e de mão de obra; ou, em função dos equipamentos disponíveis, calcular as horas de trabalho necessárias ao entendimento do plano de produção.
+	7-Definir prazo para início e término da produção quantificada.
+
+
+Ordens de Produção (OPs) - MATA650:
+http://tdn.totvs.com/pages/releaseview.action?pageId=341230021
+	Documento que inicia o processo de fabricação do produto, pode ser incluída: Manualmente, OPs por Pedido de Venda, Geração de OPs por ponto de pedido, Por MRP (projeção de estoque). Composição de código 13456.01.001:
+		-13456 é o número da OP;
+		-01 é o número do item da OP;
+		-001 é o número sequencial atribuído pelo Sistema, que identifica a relação de nível entre a OP principal e as OPs filhas.
+	As legendas de situação da OP são:
+		-prevista (amarela): 	Identifica as ordens de produção de tipo prevista
+		-em aberto (verde): 	Identifica as ordens de produção de tipo firme, não iniciadas (sem movimentação) e não ociosas.
+		-iniciada (laranja):    Identifica as ordens de produção de tipo firme, já iniciadas (com movimentação) e não ociosas.
+		-ociosa (cinza): 		Identifica as ordens de produção de tipo firme e ociosas.
+		-encerrada parcial (azul): Identifica as ordens de produção de tipo firme encerradas com menos de 100% da produção prevista.
+		-encerrada total (vermelha): Identifica as ordens de produção de tipo firme encerradas em 100% da produção prevista ou acima.
+
+
+Consulta a OPs
+http://tdn.totvs.com/pages/releaseview.action?pageId=189313351
+	Campos de consulta
+	-Ordem
+	-Item
+	-Cliente
+	-Estado: Não Iniciada, Reservada, Separada, Liberada, Requisitada, Iniciada, Finalizada, Terminada
+	-Quantidade
+	-Quantidade Produzida
+
