@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinzelAppXam_Prototype", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinzelApp2_Prototipo", "BinzelApp2_Prototipo\BinzelApp2_Prototipo.csproj", "{C90C4C5D-82FB-4C3A-921B-C21EE6C41190}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinzelApp3_Prototipo", "BinzelApp3_Prototipo\BinzelApp3_Prototipo.csproj", "{54EF78EE-7E51-4724-9A0D-FA35ED36E6F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{C90C4C5D-82FB-4C3A-921B-C21EE6C41190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C90C4C5D-82FB-4C3A-921B-C21EE6C41190}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C90C4C5D-82FB-4C3A-921B-C21EE6C41190}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{54EF78EE-7E51-4724-9A0D-FA35ED36E6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EF78EE-7E51-4724-9A0D-FA35ED36E6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EF78EE-7E51-4724-9A0D-FA35ED36E6F5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{54EF78EE-7E51-4724-9A0D-FA35ED36E6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EF78EE-7E51-4724-9A0D-FA35ED36E6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EF78EE-7E51-4724-9A0D-FA35ED36E6F5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

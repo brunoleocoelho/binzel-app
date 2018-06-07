@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Menu que será exibido na ActionBar da MainActivity -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- Search -->
+  <!--<item android:id="@+id/menuOptSearch"
+        android:title="Pesquisar"
+        android:icon="@mipmap/ic_menu_search_holo_dark"
+        android:showAsAction="ifRoom" />-->
+  <!-- Log Out -->
+  <item android:id="@+id/menuOptExit"
+        android:icon="@mipmap/ic_close_white_24dp"
+        android:title="@string/action_exit"
+        android:showAsAction="always|withText" />
+
+  <!-- Save -->
+  <!--<item android:id="@+id/menuOptSave"
+        android:icon="@mipmap/ic_action_content_save"
+        android:title="save"
+        android:showAsAction="ifRoom|withText" />-->
+  <!-- Search -->
+  <!--<item android:id="@+id/menuOptSearch"
+        android:title="Pesquisar"
+        android:icon="@mipmap/ic_menu_search_holo_dark"
+        android:showAsAction="ifRoom|withText" />-->  
+  <!-- Copy-->
+  <!--<item android:id="@+id/menuOptCopy"
+        android:icon="@mipmap/ic_menu_copy_holo_dark"
+        android:title="Copiar"
+        android:showAsAction="never" />-->
+  <!-- Cut -->
+  <!--<item android:id="@+id/menuOptCut"
+        android:icon="@mipmap/ic_menu_cut_holo_dark"
+        android:title="Recortar"
+        android:showAsAction="never" />-->
+  <!-- Paste -->
+  <!--<item android:id="@+id/menuOptPaste"
+        android:icon="@mipmap/ic_menu_paste_holo_dark"
+        android:title="Colar"
+        android:showAsAction="never" />-->
+  
+</menu>
+
+<!-- Code to implement into Activity:
+
+Android.Widget.SearchView searchView;
+public override bool OnCreateOptionsMenu(IMenu menu)
+{
+  this.MenuInflater.Inflate(Resource.Menu.menu_bar, menu);
+
+  var searchItem = menu.FindItem(Resource.Id.action_search);
+
+  searchView = searchItem.ActionProvider.JavaCast<Android.Widget.SearchView>();
+
+  searchView.QueryTextSubmit += (sender, args) =>
+  {
+    Toast.MakeText(this, "You searched: " + args.Query, ToastLength.Short).Show();
+
+  };
+
+  return base.OnCreateOptionsMenu(menu);
+}
+
+-->
